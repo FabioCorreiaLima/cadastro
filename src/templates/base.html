@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE CADASTRO</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>SISTEMA DE CADASTRO</h1>
+    </header>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="{{ url_for('setor') }}">Cadastrar Setor</a></li>
+            <li><a href="{{ url_for('funcionario') }}">Cadastrar Funcionário</a></li>
+            <li><a href="{{ url_for('cargo') }}">Cadastrar Cargo</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        &copy; {{ current_year }} SISTEMA DE CADASTRO
+    </footer>
+</body>
+</html>

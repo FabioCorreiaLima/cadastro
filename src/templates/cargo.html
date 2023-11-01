@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="content">
+        <h2>Cadastrar Cargo</h2>
+        <div class="for_conteiner">
+            <form method="POST" action="{{ url_for('cargo') }}">
+                <label for="nome">Nome do Cargo:</label>
+                <input type="text" name="nome" id="nome" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

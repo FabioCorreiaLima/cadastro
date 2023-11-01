@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Cadastrar Funcionário</h2>
+    <form method="POST" action="{{ url_for('funcionario') }}">
+        <input type="text" name="primeiro_nome" placeholder="Primeiro Nome">
+        <input type="text" name="sobrenome" placeholder="Sobrenome">
+        <input type="date" name="data_admissao" placeholder="Data de Admissão">
+        <label for="status_funcionario">Status do Funcionário:</label>
+        <select name="status_funcionario" id="status_funcionario">
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+    </form>
+{% endblock %}

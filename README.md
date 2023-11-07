@@ -7,7 +7,7 @@
 <h4>Antes de executar o programa, você precisa ter as seguintes bibliotecas instaladas em seu ambiente Python:</h4>
 
 <li>Flask- Uma biblioteca Python usada para criar documentos PDF.</li>
-<li>pandas- Uma biblioteca para manipulação de dados em formato tabular.</li>
+<li>Mysql-connector Uma biblioteca para manipulação de dados em formato tabular.</li>
 
 ## Certifique-se de que todas essas bibliotecas estejam instaladas em seu ambiente Python antes de tentar executar o programa.
 
@@ -15,7 +15,8 @@
 
 <h5>Para instalar bibliotecas, você pode usar o gerenciador de pacotes pip. Abra um terminal ou prompt de comando e execute os seguintes comandos:</h5>
 <li>pip install reportlab</li>
-<li>pip install pandas</li>
+<li>pip install mysql-connector-python
+</li>
 
 ## Executando o Programa
 Para executar o programa, você pode simplesmente executar o main.py, que faz uso dessas bibliotecas.

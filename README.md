@@ -13,7 +13,7 @@
 <h3>Instalação</h3>
 
 <h5>Para instalar bibliotecas, você pode usar o gerenciador de pacotes pip. Abra um terminal ou prompt de comando e execute os seguintes comandos:</h5>
-<li>pip install reportlab</li>
+<li>pip install flask</li>
 <li>pip install mysql-connector-python
 </li>
 

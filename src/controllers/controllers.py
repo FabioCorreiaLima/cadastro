@@ -7,11 +7,6 @@ class Index(MethodView):
     def get(self):
         return render_template('index.html')
 
-class Funcionario(MethodView):
-    def get(self):
-        return render_template('public/funcionario.html')
-
-
 class Cargo(MethodView):
     def get(self):
         setor = sql_manager.execute_query("SELECT * FROM setor")
@@ -64,8 +59,6 @@ class Funcionario(MethodView):
             sql_manager.execute_update(query, data)
         except Error as e:
             error_message = "Ocorreu um erro durante a inserção: " + str(e)
-        
-        # Recupere os cargos, independentemente do sucesso ou falha
         cargos = sql_manager.execute_query("SELECT c.id AS id_cargo, c.nome AS nome_cargo, s.id AS id_setor, s.nome AS nome_setor FROM cargos AS c JOIN setor AS s ON c.id_setor = s.id")
 
         return render_template('public/funcionario.html', cargo=cargos, error=error_message)

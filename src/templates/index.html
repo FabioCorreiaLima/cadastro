@@ -1,12 +1,22 @@
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEMA DE CADASTRO</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-</head>
-<body>
+{% extends 'public/base.html' %}
+
+{% block body %}
+
     <header>
         <h1>SISTEMA DE CADASTRO</h1>
     </header>
     <nav>
+        <ul class="nav-list">
+            <li><a href="{{ url_for('setor') }}">Cadastrar Setor</a></li>
+            <li><a href="{{ url_for('funcionario') }}">Cadastrar Funcionário</a></li>
+            <li><a href="{{ url_for('cargo') }}">Cadastrar Cargo</a></li>
+            
+        </ul>
+    </nav>
+    <div class="content">
+        {% block content %}{% endblock %}
+        
+    </div>
+
+
+{% endblock %}

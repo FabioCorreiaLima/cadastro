@@ -47,5 +47,3 @@ db_password = ''
 db_name = 'sistema_cadastro'
 
 sql_manager = SQLManager(db_host, db_user, db_password, db_name)
-query = "INSERT INTO funcionarios (primeiro_nome, sobrenome, data_admissao, status, setor_id, cargo_id) VALUES (%s, %s, %s, %s, %s, %s)"
-data = ('fabio', 'brenome', '02/01/2023', 'status_funcionario', 1, 1)

@@ -55,10 +55,7 @@ fieldset {
     width: 95%;
     
 }
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
+
 form {
     padding: 10px;
 }
@@ -74,14 +71,6 @@ form input[type="date"] {
     margin-bottom: 10px; 
 }
 
-
-
-
-form input[type="checkbox"] {
-    margin: 5px 0;
-    display: inline;
-}
-
 form select {
     width: 98%;
     padding: 10px;
@@ -90,6 +79,8 @@ form select {
     border-radius: 4px;
 }
 from select option{
+    font-size: 15px;
+
     color: #0d0d0e;
 }
 

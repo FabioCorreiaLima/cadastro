@@ -7,8 +7,7 @@
 <h4>Antes de executar o programa, você precisa ter as seguintes bibliotecas instaladas em seu ambiente Python:</h4>
 
 <li>Flask- Uma biblioteca Python usada para criar documentos PDF.</li>
-<li>Mysql-connector Uma biblioteca para manipulação de dados em formato tabular.</li>
-
+<li>Mysql-connector-python: Uma biblioteca para manipulação de dados em formato tabular usando MySQL.</li>
 ## Certifique-se de que todas essas bibliotecas estejam instaladas em seu ambiente Python antes de tentar executar o programa.
 
 <h3>Instalação</h3>

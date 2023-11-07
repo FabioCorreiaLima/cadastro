@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-
-{% block content %}
-    <h2>Cadastrar Setor</h2>
-    <form method="POST" action="{{ url_for('setor') }}">
-        <input type="text" name="nome" placeholder="Nome do Setor">
-        <button type="submit">Cadastrar</button>
-    </form>
-{% endblock %}

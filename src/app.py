@@ -3,6 +3,7 @@ from src.routes.routes import *
 
 app = Flask(__name__)
 app.config['STATIC_FOLDER'] = 'static'
+app.secret_key = secrets.token_hex(16)
 
 app.add_url_rule(routes["index"], view_func=Index.as_view("index"))
 app.add_url_rule(routes["funcionario"], view_func=Funcionario.as_view('funcionario'))

@@ -84,11 +84,6 @@ from select option{
     color: #0d0d0e;
 }
 
-.error {
-    color: red;
-    font-weight: bold; 
-}
-
 form button {
     background-color: #333;
     color: #fff;
@@ -122,4 +117,33 @@ footer {
 .valid {
     border: 1px solid green;
     color: green;
+}
+
+
+.flash-messages {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    
+    text-align: center;
+}
+
+/* Estilo para cada mensagem flash individual */
+.flash-messages li {
+    padding: 5px 0;
+    font-weight: bold;
+    transition: opacity 0.5s; /* Adicione uma transição de opacidade */
+}
+
+
+.flash-message-success {
+    border: 1px solid #00aa00;
+    color: green;
+   
+}
+
+
+.flash-message-error {
+    border: 1px solid red;
+    color: red;
 }

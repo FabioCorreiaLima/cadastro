@@ -30,3 +30,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+/**desaparecer o flash */
+document.addEventListener('DOMContentLoaded', function() {
+    var displayTime = 2000; // Tempo em milissegundos (2 segundos)
+    var flashMessages = document.querySelectorAll('.flash-messages');
+    
+    flashMessages.forEach(function(message) {
+        setTimeout(function() {
+            // Fundo verde para sucesso
+            message.style.transition = 'opacity 1s'; // Adicione uma transição de opacidade
+            message.style.opacity = '0';
+            setTimeout(function() {
+                message.style.display = 'none';
+            }, 1000); // Aguarde 1 segundo após a transição para ocultar a mensagem completamente
+        }, displayTime);
+    });
+});

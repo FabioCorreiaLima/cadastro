@@ -19,6 +19,6 @@
 </li>
 
 ## Executando o Programa
-Para executar o programa, você pode simplesmente executar o main.py, que faz uso dessas bibliotecas.
+Para executar o programa, crie o banco de dados com o script em sql/db.sql, configure o banco de dados na sua máquina e, em seguida, execute o main.py, que faz uso dessas bibliotecas.
 
 

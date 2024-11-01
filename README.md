@@ -21,4 +21,4 @@
 ## Executando o Programa
 Para executar o programa, crie o banco de dados com o script em sql/db.sql, configure o banco de dados na sua máquina e, em seguida, execute o main.py, que faz uso dessas bibliotecas.
 
-
+2024-11-01-07-41-49_PJTmYnp5.mp4
